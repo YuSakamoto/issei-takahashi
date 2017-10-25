@@ -1,6 +1,6 @@
-import line from '@line/bot-sdk';
-import express from 'express';
-import _ from 'lodash';
+const line = ('@line/bot-sdk');
+const express = ('express');
+const _ = ('lodash');
 
 // create LINE SDK config from env variables
 const config = {
