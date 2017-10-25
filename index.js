@@ -1,6 +1,6 @@
-const line = ('@line/bot-sdk');
-const express = ('express');
-const _ = ('lodash');
+const line = require('@line/bot-sdk');
+const express = require('express');
+const _ = require('lodash');
 
 // create LINE SDK config from env variables
 const config = {
