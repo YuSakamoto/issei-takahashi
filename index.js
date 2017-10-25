@@ -1,4 +1,4 @@
-'use strict';
+// 'use strict';
 
 const line = require('@line/bot-sdk');
 const express = require('express');
@@ -21,7 +21,10 @@ const app = express();
 app.post('/webhook', line.middleware(config), (req, res) => {
   Promise
     .all(req.body.events.map(handleEvent))
-    .then((result) => res.json(result));
+    .then((result) => res.json(result))
+    .then((val) => {
+      console.log(val, "val");
+    });
 });
 
 // event handler
