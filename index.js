@@ -1,7 +1,6 @@
-// 'use strict';
-
-const line = require('@line/bot-sdk');
-const express = require('express');
+import line from '@line/bot-sdk';
+import express from 'express';
+import _ from 'lodash';
 
 // create LINE SDK config from env variables
 const config = {
@@ -21,10 +20,7 @@ const app = express();
 app.post('/webhook', line.middleware(config), (req, res) => {
   Promise
     .all(req.body.events.map(handleEvent))
-    .then((result) => res.json(result))
-    .then((val) => {
-      console.log(val, "val");
-    });
+    .then((result) => res.json(result));
 });
 
 // event handler
@@ -35,7 +31,45 @@ function handleEvent(event) {
   }
 
   // create a echoing text message
-  const echo = { type: 'text', text: event.message.text };
+  const echoAry = [
+    // echo
+    {
+      type: 'text',
+      text: event.message.text
+    },
+    {
+      type: 'text',
+      text: 'いい天気だね'
+    },
+    {
+      type: 'text',
+      text: 'https://www.youtube.com/watch?v=8ykUX9yyyyY',
+    },
+    {
+      type: 'image',
+      text: 'https://pbs.twimg.com/media/C7bRrJMV4AAhujR.jpg',
+    },
+    {
+      type: 'sticker',
+      id: '100',
+      packageId: '1',
+      stickerId: '7',
+    },
+  ];
+  const echo = _.shuffle(echoAry)[0];
+
+  setTimeout(() => {
+    console.log("push!!!!");
+    client.pushMessage(event.source.userId, {
+      type: 'text',
+      text: `おはよう ${event.timestamp} ${event.source.type}`
+    });
+
+    client.pushMessage(event.source.roomId, {
+      type: 'text',
+      text: `おはよう ${event.timestamp} ${event.source.type}`
+    });
+  }, 2000);
 
   // use reply API
   return client.replyMessage(event.replyToken, echo);
