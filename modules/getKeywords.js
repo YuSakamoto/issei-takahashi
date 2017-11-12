@@ -12,7 +12,11 @@ sheetApp.useServiceAccountAuth(credentials, err => {
       if (sheet.title === 'base') {
         sheet.getRows((err, rows) => {
           for (let i in rows) {
-            console.log(rows[i], "row");
+            console.log(rows[i].keyword, "keyword");
+            console.log(rows[i].category, "category");
+            console.log(rows[i].type, "type");
+            console.log(rows[i].option, "option");
+            console.log(rows[i].content, "content");
           }
         })
       }
