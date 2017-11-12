@@ -10,7 +10,7 @@ sheetApp.useServiceAccountAuth(credentials, err => {
     const sheets = data;
     for (let i in sheets.worksheets) {
       const sheet = sheets.worksheets[i];
-      baseData = baseDagetBaseData(sheet);
+      baseData = getBaseData(sheet);
     }
   })
 });
