@@ -1,6 +1,7 @@
 const line = require('@line/bot-sdk');
 const express = require('express');
 const _ = require('lodash');
+const getKeywords = require('./modules/getKeywords');
 
 // create LINE SDK config from env variables
 const config = {

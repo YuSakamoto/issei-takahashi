@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mouso-boyfriend",
+  "private_key_id": "6d2a7a4626724a0b3434424dc9d7120811797210",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDFKQXgcJ0h6pH8\n8TRlHoXgd71QReSebMWh9st/JWM+pffwp/D3knkVfbSDuGyA2co0FbI/Cy8kyMq3\njIqgwAoH+aiRoNZC1GmD2D1+qc/B0Fsw+6vR1tkR6kUxBwqcaL/skLKxMkiXvStU\nypkrrMnPT4TzQ97EPmQy1AUP6R/xFf6AGW+4khi32TtO5HvOh4LjhJTBJQZxgXEc\nr+f6bP1FLx+IpoJIsMcdnFVQKG15MuvP6RXkWIx6Wbd+CY/BL6x2FydidAPqPY2T\nFxvNkXXYSkspLe8XbYD25zwtZCvj43SKQb8+nzz8xkm1r+rwA5gTji9rEG5wTXwa\nSJP38QK1AgMBAAECggEAMJDX3T7wPewJtQx3cxcvNClarVziIXI6xphD7Vh413RL\nnHDKBzoB8JzL7AxwUdcUG3tismvfW4jIgqkwdsOHVQqXDvRXAxROv4bzMvHCdwQL\niofb/a8WPnb+P0L0Rq345N2J3uM7hYE4HMVhMKR5+8KjRccopx+VT/3xF0e+MgTg\n9lF/IJiyxzLhBDLuRWoQfNCGK71wYiZWRLvdoxiRCxJmChb0n1pk5HQttiMYzYsO\nNDNY0qvyQuG0YTUviDcQ3k8yd5UWo8MJv1GkisppWrFrH7BjvHG18ARQ2yS9NZWZ\n5USt2oej2DHiNL23WHJIe2/epttqBc6zgboFoimzQQKBgQD9VSnEnJ3nAhPt2/Iq\nvW67YXqhB/7xYywexhZTR91YCR4uoe1t8C6+enCAwaaaXHBW+8mx5BeX9k1cEauM\nCvHO15BbeJJkUIk8QwedSblS7Li75vk0fFH5hj/5Ygs6tAbv4K9WkaJEo5qBJzCV\nPGb/IQE1dg42zetCQi3r8YFg4QKBgQDHPHOnTUY6eyRbyoemWjQoyhang7bYjqKS\n9yxzHoiSF5QPLIdq4HDGzmX8bxiNw5obwBv7F/TzK65taEx2zR91A/GkT/Lz1NPH\ngMT5CILb4jVLRk4UKlHoQY9HLf09LBsqJ/0pWCo+/UmW9Z8q+molpmdsfHsIHOvN\nk4rmX/7YVQKBgQDVw/gjvNiNJra0XoVBRWnb2gyFN18MR1fie9o42gpPkBoU1XSo\n8SQwfNbT/xRbaqcs7vgqEMNL6n0qtIph+JZEqKdaWCqHVWIIJLOXKK+l5rSXcfZV\nMJZnjL4M7It3NJQp9BlgXjFj4/2q/+vB8h8jJ7GCcCTcX/Qli/x9/OLkYQKBgAwp\nBGYRsVegbHetxNnCZ6yVqQxQXbiZ/BI8Q9pC4tMH3WGPtjQvvrJjppXhsf31ElLf\nRtXsgGbXI65Jz2Dw5BqgQv9kYc/ADaz/jwYkHtiM1fPiNqHEc3tZhQUzKWGyb3YD\nOtBrMSjnDLbKBwz4e8IQhf95GYlFOp8xgijNcyCBAoGAC7DHbFLG0wdmvwYkwz0/\nbmHcndbuEgReuc83Bz25egd3pWKBqwIi0X3q/geda8IwtEn2zvRFB7MAx2wnwAb/\nMmvLeM5ntVCtDzSyAayLFbAvtTLTt2jLYl0O2Gh6nn/BP6bO6O++z5GZ6VpgKA+7\npqfR/tDoccjG73PnhR74jBA=\n-----END PRIVATE KEY-----\n",
+  "client_email": "reader@mouso-boyfriend.iam.gserviceaccount.com",
+  "client_id": "107446622102060630493",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/reader%40mouso-boyfriend.iam.gserviceaccount.com"
+}
