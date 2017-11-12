@@ -11,6 +11,7 @@ sheetApp.useServiceAccountAuth(credentials, err => {
     for (let i in sheets.worksheets) {
       const sheet = sheets.worksheets[i];
       baseData = getBaseData(sheet);
+      console.log(baseData, "from getKeywords")
     }
   })
 });
