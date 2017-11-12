@@ -1,7 +1,6 @@
 const line = require('@line/bot-sdk');
 const express = require('express');
 const _ = require('lodash');
-const getKeywords = require('./modules/getKeywords');
 
 // create LINE SDK config from env variables
 const config = {
@@ -31,7 +30,6 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
 
-  console.log(getKeywords.baseData, "baseData")
 
   // create a echoing text message
   const echoAry = [
@@ -59,7 +57,7 @@ function handleEvent(event) {
       stickerId: '7',
     },
   ];
-  const echo = _.shuffle(echoAry)[0];
+  const echo = _.shuffle(echoAry)[0] + "test";
 
   setTimeout(() => {
     console.log("push!!!!");
