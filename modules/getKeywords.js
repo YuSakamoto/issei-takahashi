@@ -3,23 +3,37 @@ const GoogleSpreadSheet = require('google-spreadsheet');
 const sheetApp = new GoogleSpreadSheet('1-xtq27O6xvcpejVEajLj9MSwZugqncc5Ru_h8ugD8JM');
 const credentials = require('../mouso-boyfriend-6d2a7a462672.json');
 
-let sheets;
+let baseData;
+
 sheetApp.useServiceAccountAuth(credentials, err => {
   sheetApp.getInfo((err, data) => {
-    sheets = data;
+    const sheets = data;
     for (let i in sheets.worksheets) {
       const sheet = sheets.worksheets[i];
-      if (sheet.title === 'base') {
-        sheet.getRows((err, rows) => {
-          for (let i in rows) {
-            console.log(rows[i].keyword, "keyword");
-            console.log(rows[i].category, "category");
-            console.log(rows[i].type, "type");
-            console.log(rows[i].option, "option");
-            console.log(rows[i].content, "content");
-          }
-        })
-      }
+      baseData = baseDagetBaseData(sheet);
     }
   })
-})
+});
+
+function getBaseData(sheet) {
+  if (sheet.title !== 'base') return;
+  sheet.getRows((err, rows) => {
+    const data = [];
+    for (let i in rows) {
+      const row = rows[i];
+      const obj = {
+        keywords: row.keyword,
+        category: row.category,
+        type: row.type,
+        option: row.option,
+        content: row.content,
+      }
+      data.push(obj);
+    }
+    return data;
+  })
+}
+
+exports.baseData = baseData;
+
+

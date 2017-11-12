@@ -31,6 +31,8 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
 
+  console.log(getKeywords.baseData, "baseData")
+
   // create a echoing text message
   const echoAry = [
     // echo
